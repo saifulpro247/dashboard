@@ -4,10 +4,9 @@
         
     
         // chart one
-
         var options = {
           chart: {
-            height: '100px',
+            height: 120,
             type: "line",
             toolbar: {
               show: false,
@@ -49,10 +48,30 @@
             },
           },
         };
-          
-          var chart = new ApexCharts(document.querySelector("#month-chart"), options);
-          
-          chart.render();
+        var chart = new ApexCharts(document.querySelector("#month-chart"), options);
+        chart.render();
+
+        // chart two pie
+        var options = {
+          series: [88, 22],
+          chart: {
+            width: 200,
+            type: 'donut',
+          },
+        fill: {
+          type: 'gradient',
+        },
+        legend: {
+          show: false
+        },
+        
+        };
+
+        var chart = new ApexCharts(document.querySelector("#sold-pie"), options);
+        chart.render();
+
+
+
         
     })
 
