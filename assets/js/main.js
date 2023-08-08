@@ -6,35 +6,49 @@
         // chart one
 
         var options = {
-            chart: {
-              type: 'line'
+          chart: {
+            height: '100px',
+            type: "line",
+            toolbar: {
+              show: false,
             },
-            stroke: {
-                curve: 'smooth',
-              },
-              legend: {
-                show: false
-              },
+          },
+          stroke: {
+            curve: "smooth",
+          },
+          grid: {
+            show: false,
+          },
 
-              xaxis: {
-                lines: {
-                  show: false,
-                }
-              },
-              yaxis: {
-                lines: {
-                  show: false,
-                }
-              },
-            series: [{
-              name: 'sales',
-              data: [30,40,45,50,49,60,70,91,125]
-            }],
+          yaxis: {
+            lines: {
+              show: false,
+            },
+            labels: {
+              show: false,
+            },
+          },
 
-            xaxis: {
-              categories: [1991,1992,1993,1994,1995,1996,1997, 1998,1999]
-            }
-          }
+          series: [
+            {
+              name: "sales",
+              data: [30, 40, 45, 50, 91, 125],
+            },
+          ],
+
+          xaxis: {
+            categories: [1991, 1992, 1993, 1994, 1998, 1999],
+            labels: {
+              show: false,
+            },
+            axisBorder: {
+              show: false,
+            },
+            lines: {
+              show: false,
+            },
+          },
+        };
           
           var chart = new ApexCharts(document.querySelector("#month-chart"), options);
           
