@@ -251,6 +251,64 @@
         
         var chart = new ApexCharts(document.querySelector("#pending-pie"), options);
         chart.render();
+
+        // Available tour donut.
+        var options = {
+          series: [75],
+          chart: {
+            height: 270,
+            width: 270,
+            type: "radialBar",
+            toolbar: {
+              show: false
+            }
+          },
+          plotOptions: {
+            radialBar: {
+              startAngle: 0,
+              endAngle: 360,
+              track: {
+                background: "#EDEFF1"
+              },
+              dataLabels: {
+                show: true,
+                name: {
+                  show: false
+                },
+                value: {
+                  formatter: function (val) {
+                    return parseInt(val) + "%";
+                  },
+                  color: "#AE9142",
+                  fontSize: "18px",
+                  show: true,
+                  fontWeight: "bold",
+                  offsetY: 5
+                }
+              }
+            }
+          },
+          fill: {
+            type: "gradient", 
+            gradient: {
+              shade: "dark", 
+              type: "horizontal", 
+              shadeIntensity: 0.8, 
+              gradientToColors: ["#07AC72"], 
+              inverseColors: true, 
+              opacityFrom: 0.5, 
+              opacityTo: 1, 
+              stops: [0, 100], 
+            }
+          },
+          stroke: {
+            show: true,
+            lineCap: "round",
+          }
+        };
+        
+        var chart = new ApexCharts(document.querySelector("#tour-pie"), options);
+        chart.render();
         
         
         

@@ -305,7 +305,7 @@ body{
     background: linear-gradient(135deg, rgba(91, 228, 155, 0.2), rgba(0, 167, 111, 0.2)) rgb(255, 255, 255);
     border-radius: 16px;
 }
-.book__single.book-status{
+.book__single.book-status, .tour__counter{
     border-radius: 16px;
 }
 
