@@ -291,22 +291,35 @@
         chart.render();
         
         // customer slider
+    $(".booked--slider").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: '<button type="button" class="slick-prev"><img src="assets/img/prev.svg"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="assets/img/next.svg"></button>',
+    });
+       // booking slider
+    $(".single__slider").slick({
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      prevArrow: '<button type="button" class="slick-prev"><img src="assets/img/prev.svg"></button>',
+      nextArrow: '<button type="button" class="slick-next"><img src="assets/img/next.svg"></button>',
+    });
+    
 
-        const swiper = new Swiper('.customer--review-slider', {
-          // Optional parameters
-          direction: 'horizontal',
-          loop: true,
-        
-          // Navigation arrows
-          // navigation: {
-          //   nextEl: '.swiper-button--next',
-          //   prevEl: '.swiper-button--prev',
-          // },
 
-        
-        });
-        
-        
+
+
+
+
+
+
+
+
+
+
+
+
+
     })
 
     

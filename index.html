@@ -11,7 +11,7 @@
     <!-- apex chart css -->
     <link rel="stylesheet" href="assets/css/apexcharts.css">
     <!-- swiper css -->
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Dashboard Template</title>
@@ -348,9 +348,7 @@
 
                                         </div>
                                     </div>
-                                    <div class="swiper customer--review-slider ">
-                                        <div class="swiper-wrapper">
-
+                                        <div class="booked--slider">
                                             <div class="booked__customer--slider  swiper-slide">
                                                 <div class="booked__customer--meta d-flex gap-3 mb-20">
                                                     <div class="slider--img"><img src="assets/img/avatar_25.jpg" alt=""></div>
@@ -372,18 +370,6 @@
                                                         <span>Best Price</span>
                                                     </div>
                                                 </div>
-                                                <!-- If we need navigation buttons -->
-                                                <!-- <div class="swiper-button">
-                                                    <div class="swiper-button--prev">
-                                                        <span class="material-symbols-sharp">
-                                                            navigate_before
-                                                            </span>
-                                                    </div>
-                                                    <div class="swiper-button--next"><span class="material-symbols-sharp">
-                                                        navigate_next
-                                                        </span>
-                                                    </div>
-                                                </div> -->
                                             </div>
 
                                             <div class="booked__customer--slider swiper-slide">
@@ -406,25 +392,9 @@
                                                         <span>Recommended</span>
                                                         <span>Best Price</span>
                                                     </div>
-                                                </div>
-                                                <!-- If we need navigation buttons -->
-                                                <!-- <div class="swiper-button">
-                                                    <div class="swiper-button--prev">
-                                                        <span class="material-symbols-sharp">
-                                                            navigate_before
-                                                            </span>
-                                                    </div>
-                                                    <div class="swiper-button--next"><span class="material-symbols-sharp">
-                                                        navigate_next
-                                                        </span>
-                                                    </div>
-                                                </div>
-                                                 -->
+                                                </div>                                              
                                             </div>
                                         </div>
-                                    </div>
-
-
                                     <div class="booked__terms--accept border-t-1 d-flex flex-row justify-content-between gap-3 pt-20 mt-20">
                                         <button class=" flex-fill btn booked__btn danger">Accept</button>
                                         <button class="flex-fill btn booked__btn bg-black text-white">Reject</button>
@@ -432,6 +402,143 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="booking__newest">
+                                    <div class="booked__customer-text">
+                                        <h5>Newest Booking</h5>
+                                        <p class="regular medium">12 Booking</p>
+                                    </div>
+                                </div>
+                                <div class="single__slider">
+
+                                    <div class="single__slider--content">
+                                        <div class="booked__customer--meta d-flex gap-3 p-3">
+                                            <div class="slider--img"><img src="assets/img/avatar_25.jpg" alt=""></div>
+                                            <div class="slider--author">
+                                                <h5 class="regular mb-0 medium primary-color">Marzia Alam</h5>
+                                                <p class="mb-0 light-color small">08 aug 2023 10.32 am</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="room_details d-flex justify-content-between align-items-center p-3">
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                calendar_month
+                                                </span> 3days 2 nights</p>
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                group
+                                                </span>3-5 guest</p>
+                                        </div>
+                                        <div class="single__image relative">
+                                            <img src="assets/img/travel_1.jpg" alt="">
+                                            <div class="booking__rate"><p>$85</p></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="single__slider--content">
+                                        <div class="booked__customer--meta d-flex gap-3 p-3">
+                                            <div class="slider--img"><img src="assets/img/avatar_25.jpg" alt=""></div>
+                                            <div class="slider--author">
+                                                <h5 class="regular mb-0 medium primary-color">Marzia Alam</h5>
+                                                <p class="mb-0 light-color small">08 aug 2023 10.32 am</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="room_details d-flex justify-content-between align-items-center p-3">
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                calendar_month
+                                                </span> 3days 2 nights</p>
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                group
+                                                </span>3-5 guest</p>
+                                        </div>
+                                        <div class="single__image relative">
+                                            <img src="assets/img/travel_1.jpg" alt="">
+                                            <div class="booking__rate"><p>$85</p></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="single__slider--content">
+                                        <div class="booked__customer--meta d-flex gap-3 p-3">
+                                            <div class="slider--img"><img src="assets/img/avatar_25.jpg" alt=""></div>
+                                            <div class="slider--author">
+                                                <h5 class="regular mb-0 medium primary-color">Marzia Alam</h5>
+                                                <p class="mb-0 light-color small">08 aug 2023 10.32 am</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="room_details d-flex justify-content-between align-items-center p-3">
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                calendar_month
+                                                </span> 3days 2 nights</p>
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                group
+                                                </span>3-5 guest</p>
+                                        </div>
+                                        <div class="single__image relative">
+                                            <img src="assets/img/travel_1.jpg" alt="">
+                                            <div class="booking__rate"><p>$85</p></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="single__slider--content">
+                                        <div class="booked__customer--meta d-flex gap-3 p-3">
+                                            <div class="slider--img"><img src="assets/img/avatar_25.jpg" alt=""></div>
+                                            <div class="slider--author">
+                                                <h5 class="regular mb-0 medium primary-color">Marzia Alam</h5>
+                                                <p class="mb-0 light-color small">08 aug 2023 10.32 am</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="room_details d-flex justify-content-between align-items-center p-3">
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                calendar_month
+                                                </span> 3days 2 nights</p>
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                group
+                                                </span>3-5 guest</p>
+                                        </div>
+                                        <div class="single__image relative">
+                                            <img src="assets/img/travel_1.jpg" alt="">
+                                            <div class="booking__rate"><p>$85</p></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="single__slider--content">
+                                        <div class="booked__customer--meta d-flex gap-3 p-3">
+                                            <div class="slider--img"><img src="assets/img/avatar_25.jpg" alt=""></div>
+                                            <div class="slider--author">
+                                                <h5 class="regular mb-0 medium primary-color">Marzia Alam</h5>
+                                                <p class="mb-0 light-color small">08 aug 2023 10.32 am</p>
+                                            </div>
+                                            
+                                        </div>
+                                        <div class="room_details d-flex justify-content-between align-items-center p-3">
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                calendar_month
+                                                </span> 3days 2 nights</p>
+                                            <p class="d-flex align-items-center"><span class="material-symbols-sharp">
+                                                group
+                                                </span>3-5 guest</p>
+                                        </div>
+                                        <div class="single__image relative">
+                                            <img src="assets/img/travel_1.jpg" alt="">
+                                            <div class="booking__rate"><p>$85</p></div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- booking details -->
+                        <div class="row">
+                            <div class="col-12">
+                                
+                            </div>
+                        </div>
+                        <!-- booking details end -->
                     </div>
                 </div>
                 <!-- achievement end -->
@@ -442,7 +549,7 @@
         <script src="assets/js/jQuery-3.7.0.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/apexcharts.min.js"></script>
-        <script src="assets/js/swiper.min.js"></script>
+        <script src="assets/js/slick.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
