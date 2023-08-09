@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap-5.3.1.css">
     <!-- apex chart css -->
     <link rel="stylesheet" href="assets/css/apexcharts.css">
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Dashboard Template</title>
@@ -150,7 +152,7 @@
                     <div class="container">
                         <div class="row">
 
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-20">
                                 <div class="dascontent__top--signle">
                                     <div class="dascontent__top--meta d-flex justify-content-between">
                                         <div class="dascontent__top--content">
@@ -163,7 +165,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-20">
                                 <div class="dascontent__top--signle">
                                     <div class="dascontent__top--meta d-flex justify-content-between">
                                         <div class="dascontent__top--content">
@@ -176,7 +178,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-20">
                                 <div class="dascontent__top--signle">
                                     <div class="dascontent__top--meta d-flex justify-content-between">
                                         <div class="dascontent__top--content">
@@ -203,7 +205,7 @@
                             <div class="col-md-8">
                                 <div class="row">
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 mb-20">
                                         <div class="tasksarea__single income-status box-shadow pb-25 pt-25 pr-25 pl-25">
                                             <div class="total-status d-flex align-items-center justify-content-between">
                                                 <div class="monthly-income">
@@ -223,7 +225,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-6 mb-20">
                                         <div class="book__single book-status box-shadow pb-25 pt-25 pr-25 pl-25">
                                             <div class="book--title">
                                                 <h3 class="mb-20 semibold primary-color">Booked</h3>
@@ -261,8 +263,7 @@
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="col-12">
+                                    <div class="col-12 mb-20">
                                         <div class="booking__status-box">
                                             <div class="booking__sold d-flex flex-row">
                                                 <div class="booking__sold--single d-flex align-items-center border-r-1">
@@ -288,10 +289,9 @@
                                         </div>
                                         
                                     </div>
-
                                 </div>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 mb-20">
                                 <div class="tour__counter  pb-25 pl-25 pr-25 pt-25 box-shadow">
                                     <div class="tour__counter--single ">
                                         <h3 class="big-text bold primary-color mb-20">Tours Available
@@ -314,6 +314,124 @@
 
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-lg-8 mb-20">
+                                <div class="multi-axis-chart-area box-shadow pb-25 pl-25 pr-25 pt-25">
+                                    <div class="chart-area-title d-flex justify-content-between align-items-center">
+                                        <div class="area-title">
+                                            <h4 class="bold regular">Statistics</h4>
+                                            <p class="mb-0">(+43% Sold | +12% Canceled) than last year
+                                            </p>
+                                        </div>
+                                        <div class="area-selection">
+                                            <select class="form-select" aria-label="Default select example">
+                                                <option value="1">Daily</option>
+                                                <option value="2">Weekly</option>
+                                                <option value="3">Monthly</option>
+                                              </select>
+                                        </div>
+                                    </div>
+                                    <div class="multi-axis-static-chart">
+                                        <div id="static-chart"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="booked__customer--review box-shadow pt-25 pb-25 pr-25 pl-25">
+
+                                    <div class="booked__customer--review-box">
+                                        <div class="booked__customer-text">
+                                            <h5>Customer Review</h5>
+                                            <p class="regular medium">5 Reviews</p>
+                                        </div>
+                                        <div class="book__customer--direction">
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper customer--review-slider ">
+                                        <div class="swiper-wrapper">
+
+                                            <div class="booked__customer--slider  swiper-slide">
+                                                <div class="booked__customer--meta d-flex gap-3 mb-20">
+                                                    <div class="slider--img"><img src="assets/img/avatar_25.jpg" alt=""></div>
+                                                    <div class="slider--author">
+                                                        <h5 class="regular mb-0 medium primary-color">Marzia Alam</h5>
+                                                        <p class="mb-0 light-color small">posted 08 aug 2023 10.32 am</p>
+                                                    </div>
+                                                </div>
+                                                <div class="rating--star">
+                                    
+                                                </div>
+                                                <div class="slider--text">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quam fugiat a eligendi amet
+                                                        distinctio ut quasi itaque saepe veritatis ad, magnam iusto quibusdam eos dolore sequi, aperiam ipsa
+                                                        quae!</p>
+                                                    <div class="slider--tags">
+                                                        <span>Great Service</span>
+                                                        <span>Recommended</span>
+                                                        <span>Best Price</span>
+                                                    </div>
+                                                </div>
+                                                <!-- If we need navigation buttons -->
+                                                <!-- <div class="swiper-button">
+                                                    <div class="swiper-button--prev">
+                                                        <span class="material-symbols-sharp">
+                                                            navigate_before
+                                                            </span>
+                                                    </div>
+                                                    <div class="swiper-button--next"><span class="material-symbols-sharp">
+                                                        navigate_next
+                                                        </span>
+                                                    </div>
+                                                </div> -->
+                                            </div>
+
+                                            <div class="booked__customer--slider swiper-slide">
+                                                <div class="booked__customer--meta d-flex gap-3 mb-20">
+                                                    <div class="slider--img"><img src="assets/img/avatar_25.jpg" alt=""></div>
+                                                    <div class="slider--author">
+                                                        <h5 class="regular mb-0 medium primary-color">Marzia Alam</h5>
+                                                        <p class="mb-0 light-color small">posted 08 aug 2023 10.32 am</p>
+                                                    </div>
+                                                </div>
+                                                <div class="rating--star">
+                                    
+                                                </div>
+                                                <div class="slider--text">
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quam fugiat a eligendi amet
+                                                        distinctio ut quasi itaque saepe veritatis ad, magnam iusto quibusdam eos dolore sequi, aperiam ipsa
+                                                        quae!</p>
+                                                    <div class="slider--tags">
+                                                        <span>Great Service</span>
+                                                        <span>Recommended</span>
+                                                        <span>Best Price</span>
+                                                    </div>
+                                                </div>
+                                                <!-- If we need navigation buttons -->
+                                                <!-- <div class="swiper-button">
+                                                    <div class="swiper-button--prev">
+                                                        <span class="material-symbols-sharp">
+                                                            navigate_before
+                                                            </span>
+                                                    </div>
+                                                    <div class="swiper-button--next"><span class="material-symbols-sharp">
+                                                        navigate_next
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                 -->
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="booked__terms--accept border-t-1 d-flex flex-row justify-content-between gap-3 pt-20 mt-20">
+                                        <button class=" flex-fill btn booked__btn danger">Accept</button>
+                                        <button class="flex-fill btn booked__btn bg-black text-white">Reject</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- achievement end -->
@@ -324,6 +442,7 @@
         <script src="assets/js/jQuery-3.7.0.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/apexcharts.min.js"></script>
+        <script src="assets/js/swiper.min.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>

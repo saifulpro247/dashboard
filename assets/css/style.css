@@ -62,6 +62,9 @@ Tags: Admin Templates
 .box-shadow{
     box-shadow: var(--box-shadow);
 }
+.danger{
+    background-color: var(--danger-bg);
+}
 .padding{
     padding: 16px;
 }
@@ -328,4 +331,10 @@ body{
     -webkit-box-pack: center;
     justify-content: center;
     width: 100%;
+}
+
+.slider--img img {
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
 }
