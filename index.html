@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="assets/js/modernizr-3.12.0.min.js"></script>
+
     <title>Dashboard Template</title>
 </head>
     <body>
@@ -36,29 +38,85 @@
                         </button>
                     </div>
                     <div class="booking__menu--right d-flex gap-2 align-items-center mr-5">
+                        <div class="dropdown">
+                            <button class=" border-0 bg-transparent data-btn" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="material-symbols-sharp">
+                                    language
+                                    </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#">
+                                    <span class="material-symbols-sharp">
+                                        cloud_download
+                                        </span> Download</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"> <span class="material-symbols-sharp">
+                                    print
+                                    </span> Print</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"><span class="material-symbols-sharp">
+                                    share
+                                    </span> Share</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1 warning" href="#"><span class="material-symbols-sharp">
+                                    delete
+                                    </span> Delete</a></li>
+                            </ul>
+                        </div>
 
-                        <button class="booking__menu--btn border-0 no-bg p-0">
-                            <span class="material-symbols-sharp">
-                                language
-                                </span>
-                        </button>
+
                         <button class="booking__menu--btn border-0 no-bg p-0">
                             <span class="material-symbols-sharp">
                                 notifications
                                 </span>
                         </button>
-                        <button class="booking__menu--btn border-0 no-bg p-0">
-                            <span class="material-symbols-sharp">
-                                account_circle
-                                </span>
-                        </button>
+                        <div class="dropdown booking__menu--btn border-0 no-bg p-0">
+                            <button class=" border-0 bg-transparent data-btn" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="material-symbols-sharp">
+                                    account_circle
+                                    </span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#">
+                                    <span class="material-symbols-sharp">
+                                        cloud_download
+                                        </span> Download</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"> <span class="material-symbols-sharp">
+                                    print
+                                    </span> Print</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"><span class="material-symbols-sharp">
+                                    share
+                                    </span> Share</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1 warning" href="#"><span class="material-symbols-sharp">
+                                    delete
+                                    </span> Delete</a></li>
+                            </ul>
+                        </div>
+
                         <button class="booking__menu--btn border-0 no-bg p-0">
                             <span class="material-symbols-sharp">
                             settings
                             </span>
                         </button>
-                        <div class="booking__menu--profile radius-50">
-                            <a href="#"><img src="assets/img/avatar_25.jpg" class="" alt=""></a>
+                        <div class="dropdown booking__menu--profile radius-50">
+                            <button class=" border-0 bg-transparent data-btn" type="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <a href="#"><img src="assets/img/avatar_25.jpg" class="" alt=""></a>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#">
+                                    <span class="material-symbols-sharp">
+                                        cloud_download
+                                        </span> Download</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"> <span class="material-symbols-sharp">
+                                    print
+                                    </span> Print</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"><span class="material-symbols-sharp">
+                                    share
+                                    </span> Share</a></li>
+                                <li class="small"><a class="dropdown-item d-flex align-items-center gap-1 warning" href="#"><span class="material-symbols-sharp">
+                                    delete
+                                    </span> Delete</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -535,7 +593,352 @@
                         <!-- booking details -->
                         <div class="row">
                             <div class="col-12">
-                                
+                                <div class="booking__details">
+                                    <div class="booking__details--text">
+                                        <h3>Booking Details</h3>
+                                    </div>
+                                    <div class="booking__details--table">
+                                        <table class="booking_table">
+                                            <thead class="table__header">
+                                                <tr class="table__row">
+                                                    <th class="table__heading">Destination</th>
+                                                    <th class="table__heading">Customer</th>
+                                                    <th class="table__heading">Check In</th>
+                                                    <th class="table__heading">Check Out</th>
+                                                    <th class="table__heading">Status</th>
+                                                    <th class="table__heading"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="table__body">
+                                                <tr class="table__row">
+                                                    <td class="table__data-1">
+                                                        <div class="table__img">
+                                                            <img src="assets/img/travel_2.jpg" class="table__img--img" alt="">
+                                                        </div>
+                                                        Historic Heritage Tour
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name-paid">Jayvion Simon
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data--anchor">
+                                                        <div class="table__data--data">
+                                                            <div class="dropdown">
+                                                                <button class=" border-0 bg-transparent data-btn" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="component-iconify MuiBox-root css-1t9pz9x iconify iconify--eva" width="1em" height="1em" viewBox="0 0 24 24"><g id="iconifyReact132"><g id="iconifyReact133"><g id="iconifyReact134" fill="currentColor"><circle cx="12" cy="12" r="2"></circle><circle cx="12" cy="5" r="2"></circle><circle cx="12" cy="19" r="2"></circle></g></g></g></svg>
+                                                                    <span class="icon--stylus"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#">
+                                                                        <span class="material-symbols-sharp">
+                                                                            cloud_download
+                                                                            </span> Download</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"> <span class="material-symbols-sharp">
+                                                                        print
+                                                                        </span> Print</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"><span class="material-symbols-sharp">
+                                                                        share
+                                                                        </span> Share</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1 warning" href="#"><span class="material-symbols-sharp">
+                                                                        delete
+                                                                        </span> Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__data-1">
+                                                        <div class="table__img">
+                                                            <img src="assets/img/travel_2.jpg" class="table__img--img" alt="">
+                                                        </div>
+                                                        Historic Heritage Tour
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name-paid">Jayvion Simon
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data--anchor">
+                                                        <div class="table__data--data">
+                                                            <div class="dropdown">
+                                                                <button class=" border-0 bg-transparent data-btn" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="component-iconify MuiBox-root css-1t9pz9x iconify iconify--eva" width="1em" height="1em" viewBox="0 0 24 24"><g id="iconifyReact132"><g id="iconifyReact133"><g id="iconifyReact134" fill="currentColor"><circle cx="12" cy="12" r="2"></circle><circle cx="12" cy="5" r="2"></circle><circle cx="12" cy="19" r="2"></circle></g></g></g></svg>
+                                                                    <span class="icon--stylus"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#">
+                                                                        <span class="material-symbols-sharp">
+                                                                            cloud_download
+                                                                            </span> Download</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"> <span class="material-symbols-sharp">
+                                                                        print
+                                                                        </span> Print</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"><span class="material-symbols-sharp">
+                                                                        share
+                                                                        </span> Share</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1 warning" href="#"><span class="material-symbols-sharp">
+                                                                        delete
+                                                                        </span> Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__data-1">
+                                                        <div class="table__img">
+                                                            <img src="assets/img/travel_2.jpg" class="table__img--img" alt="">
+                                                        </div>
+                                                        Historic Heritage Tour
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name-paid">Jayvion Simon
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data--anchor">
+                                                        <div class="table__data--data">
+                                                            <div class="dropdown">
+                                                                <button class=" border-0 bg-transparent data-btn" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="component-iconify MuiBox-root css-1t9pz9x iconify iconify--eva" width="1em" height="1em" viewBox="0 0 24 24"><g id="iconifyReact132"><g id="iconifyReact133"><g id="iconifyReact134" fill="currentColor"><circle cx="12" cy="12" r="2"></circle><circle cx="12" cy="5" r="2"></circle><circle cx="12" cy="19" r="2"></circle></g></g></g></svg>
+                                                                    <span class="icon--stylus"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#">
+                                                                        <span class="material-symbols-sharp">
+                                                                            cloud_download
+                                                                            </span> Download</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"> <span class="material-symbols-sharp">
+                                                                        print
+                                                                        </span> Print</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"><span class="material-symbols-sharp">
+                                                                        share
+                                                                        </span> Share</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1 warning" href="#"><span class="material-symbols-sharp">
+                                                                        delete
+                                                                        </span> Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__data-1">
+                                                        <div class="table__img">
+                                                            <img src="assets/img/travel_2.jpg" class="table__img--img" alt="">
+                                                        </div>
+                                                        Historic Heritage Tour
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name-paid">Jayvion Simon
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data--anchor">
+                                                        <div class="table__data--data">
+                                                            <div class="dropdown">
+                                                                <button class=" border-0 bg-transparent data-btn" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="component-iconify MuiBox-root css-1t9pz9x iconify iconify--eva" width="1em" height="1em" viewBox="0 0 24 24"><g id="iconifyReact132"><g id="iconifyReact133"><g id="iconifyReact134" fill="currentColor"><circle cx="12" cy="12" r="2"></circle><circle cx="12" cy="5" r="2"></circle><circle cx="12" cy="19" r="2"></circle></g></g></g></svg>
+                                                                    <span class="icon--stylus"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#">
+                                                                        <span class="material-symbols-sharp">
+                                                                            cloud_download
+                                                                            </span> Download</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"> <span class="material-symbols-sharp">
+                                                                        print
+                                                                        </span> Print</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"><span class="material-symbols-sharp">
+                                                                        share
+                                                                        </span> Share</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1 warning" href="#"><span class="material-symbols-sharp">
+                                                                        delete
+                                                                        </span> Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="table__row">
+                                                    <td class="table__data-1">
+                                                        <div class="table__img">
+                                                            <img src="assets/img/travel_2.jpg" class="table__img--img" alt="">
+                                                        </div>
+                                                        Historic Heritage Tour
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name">Jayvion Simon
+                                                            </span>
+                                                            <span class="data-find">365-374-4961
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data">
+                                                        <div class="table__data--data">
+                                                            <span class="data-name-paid">Jayvion Simon
+                                                            </span>
+                                                        </div>
+                                                    </td>
+                                                    <td class="table__data--anchor">
+                                                        <div class="table__data--data">
+                                                            <div class="dropdown">
+                                                                <button class=" border-0 bg-transparent data-btn" type="button"
+                                                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="component-iconify MuiBox-root css-1t9pz9x iconify iconify--eva" width="1em" height="1em" viewBox="0 0 24 24"><g id="iconifyReact132"><g id="iconifyReact133"><g id="iconifyReact134" fill="currentColor"><circle cx="12" cy="12" r="2"></circle><circle cx="12" cy="5" r="2"></circle><circle cx="12" cy="19" r="2"></circle></g></g></g></svg>
+                                                                    <span class="icon--stylus"></span>
+                                                                </button>
+                                                                <ul class="dropdown-menu">
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#">
+                                                                        <span class="material-symbols-sharp">
+                                                                            cloud_download
+                                                                            </span> Download</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"> <span class="material-symbols-sharp">
+                                                                        print
+                                                                        </span> Print</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1" href="#"><span class="material-symbols-sharp">
+                                                                        share
+                                                                        </span> Share</a></li>
+                                                                    <li class="small"><a class="dropdown-item d-flex align-items-center gap-1 warning" href="#"><span class="material-symbols-sharp">
+                                                                        delete
+                                                                        </span> Delete</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="booking__all d-flex justify-content-end p-3 border-t-1">
+                                        <a class="d-flex align-items-center text-decoration-none primary-color semibold" href="#">View All <span class="material-symbols-sharp">
+                                            navigate_next
+                                            </span></a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <!-- booking details end -->
@@ -550,6 +953,7 @@
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/apexcharts.min.js"></script>
         <script src="assets/js/slick.min.js"></script>
+        <script src="assets/js/popper.core.js"></script>
         <script src="assets/js/main.js"></script>
     </body>
 </html>
